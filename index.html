@@ -28,8 +28,9 @@
 		link.type = 'text/css';
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
+		
 	</script>
-
+	
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -48,8 +49,10 @@
 					<small><a href="">Fernando Gutiérrez R.</a> </small>
 				</p>
 			</section>
-			<section data-background-iframe="https://stackshare.io/fernandogutir1779/tutelkan" data-background-interactive>
-				
+			<section data-background-transition="zoom" data-transition="convex" data-background-image="img/logo.png"
+				data-background-size="300px" data-background-position="98% 3%">
+				<h4>Tecnologías</h4>
+				<img src="./img/stack.PNG" alt="" style="width: 600px;height: 400px;">
 			</section>
 				
 			<!-- inicio fundamentos -->
@@ -137,7 +140,7 @@
 			<!-- inicio arquitectura -->
 			<section data-background-transition="zoom" data-transition="convex" data-background-image="img/logo.png" data-background-size="300px" data-background-position="98% 3%">
 				<h4 >Arquitectura Cliente - Servidor</h4>
-				<img src="./img/arquitectura.PNG" alt="" style="width: 600px;height: 400px;">
+				<img src="./img/arquitectura.PNG" alt="" style="width: 400px;height: 450px;">
 				<p style="font-size: 16px;">
 					Una arquitectura cliente servidor posee un flujo definido en sus procesos y su funcionamiento es básicamente el despliegue exitoso de este: los clientes inician solicitudes a los servidores, estos se encargan de tramitar las solicitudes y devolver las respuestas apropiadas.
 					La arquitectura propuesta está basada en un conjunto de patrones abstractos que definen la forma y estructura en que interactúan los actores y componentes en todas sus capas (interfaces, comunicación, etc.).
@@ -160,7 +163,7 @@
 			</section>
 			<section data-background-transition="zoom" data-transition="convex" data-background-image="img/logo.png" data-background-size="300px" data-background-position="98% 3%">
 				<h4 >Implementación de Cliente</h4>
-				<img src="./img/cliente.PNG" alt="" style="width: 400px;height: 500px;">
+				<img src="./img/cliente.PNG" alt="" style="width: 400px;height: 300px;">
 				<p style="font-size: 16px;">
 					El cliente está compuesto únicamente por los lenguajes HTML (Quasar Framework), CSS (stylus) y Javascript (Vue.js).
 				</p>
@@ -170,7 +173,7 @@
 				<ul style="font-size: 25px;" >
 					<li class="fragment" data-transition="zoom">Para desarrollar las hojas de estilos, se utilizan preprocesadores en este caso stylus. Los preprocesadores con lenguajes que se utilizan para abstraerse, mejorar, potenciar o agregar nuevas características que no están presentes en el lenguaje objeto, en este caso CSS.
 					</li>
-					<li class="fragment" data-transition="zoom">Para desarrollar los archivos javascript se utilizan las ultimas características de ECMASCRIPT 6 y se compilan con babel.js para retrocompatibilidad con ECMASCRIPT 5
+					<li class="fragment" data-transition="zoom">Para desarrollar los archivos javascript se utilizan las ultimas características de ECMASCRIPT 6 y se transpilan con babel.js para retrocompatibilidad con ECMASCRIPT 5
 					</li>
 					<li class="fragment" data-transition="zoom">Se utilizan variadas librerías para realizar tareas genéricas, como validaciones, efectos, gráficos, etc.; Todas estas librerías están desarrolladas en javascript.
 					</li>
@@ -357,6 +360,8 @@
 		});
 
 	</script>
+	
+
 
 </body>
 
